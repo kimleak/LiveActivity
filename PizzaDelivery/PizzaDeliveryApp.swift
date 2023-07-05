@@ -24,7 +24,7 @@ struct PizzaDeliveryApp: App {
         center.requestAuthorization(options: [.sound , .alert , .badge ], completionHandler: { (granted, error) in
             if ((error != nil)) { UIApplication.shared.registerForRemoteNotifications() }
             else {
-                
+                print("GG")
             }
         })
     }
